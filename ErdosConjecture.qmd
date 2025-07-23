@@ -1,25 +1,86 @@
 ---
-title: "A Short Proof of a Generalised Conjecture of Erdős in Amenable Groups"
+project:
+  title: "A Short Proof of a Generalised Conjecture of Erdős in Amenable Groups"
+  type: manuscript
 
 format:
-  html:
+  schema-html:
     toc: true
-  pdf:
-    documentclass: article
-    pdf-engine: pdflatex
-    include-in-header: LaTeXMacros.tex
+  schema-latex:
     toc: true
-    keep-tex: true
+  schema-pdf:
+    toc: true
+
+term-aliases:
+  - alias: Erdős
+    macro: Erdos
+
+author:
+    - name: Kai Prince
+      affiliation: The University of Manchester
+      corresponding: true
 ---
-# Abstract
+# Abstract {.unnumbered}
+
+We follow steps provided by the paper published by [@host2019short], 'A Short Proof of a Conjecture of Erdős Proved by Moreira, Richter and Robertson', as well as using the results provided by [@kra2022infinite], to generalise the proof of Erdős's conjecture for amenable groups. The main result that we aim to prove is: 'every positively dense subset of an amenable group contains the group sumset of $k$ infinite sets for every natural number $k$'.
 
 # Introduction
 
+::: {#thm-GenErdosConjComb}
+## [cf. @host2019short, Theorem 1]
+
+Let $(\Group,\cdot)$ be an amenable group. If $A\subseteq G$ has positive density, then there exists infinite subsets $B$ and $C$ of $G$ such that $B\cdot C\subset A$.
+:::
+
+::: {#thm-GenErdosConjRel}
+## [cf. @host2019short, Proposition 2]
+
+There exists a set of positive density not containing any sumset of positive density and an infinite set.
+:::
+
+::: {#thm-GenNErdosConjComb}
+## [cf. @kra2022infinite, Theorem 1.1]
+
+Let $(G,\cdot)$ be an amenable group. If $A\subseteq G$ has positive density then, for every $k\in\mathbb{N}$, there are infinite subsets $B_1,...,B_k\subset G$ such that $B_1\cdot\cdots\cdot B_k\subset A$.
+:::
+
 # Preliminaries
+
+We will use $\mathbb{N}=\{1,2,3,...\}$ and $\Identity$ to denote the identity of the group $\Group$.
 
 ## Amenable Groups and Actions
 
+Throughout this paper, unless otherwise specified, we will let $(G,\cdot)$ be a second countable discrete group. This also means that the Haar measure of $G$ is the counting measure.
+
+:::: {#def-FolnerSequenceDef}
+
+[Embed definition from folner.qmd]
+::::
+
+For simplicity of this paper, we will use the alternative and equivalent definition that a group, $\AmenableGroup$, is *amenable* (and second countable) if and only if it has a Følner sequence.
+
+:::: {#def-TemperedSequenceDef}
+
+[Embed definition from folner.qmd]
+::::
+
+:::: {#def-DensityDef}
+
+[Embed definition from density.qmd]
+::::
+
 ## Topological Dynamics of Group Actions
+
+:::: {#def-ActionDef}
+
+[Embed definition from actions.qmd]
+::::
+
+A *topological dynamical system under the action of $\Group$*, denoted $(X,\Group)$, is a compact metric space $X$ that has continuous surjective maps, $(\GroupElement,x)\mapsto \GroupAction{\GroupElement}{x}$, for all $\GroupElement\in\Group$.
+
+Let $x\in X$, $\Folner=(\Folner[N])_{N\in\mathbb{N}}$ be a Følner sequence in $\Gamma$ and $\mu$ a probability measure on $X$. Where $\delta_x$ is the Dirac mass at $x$, if
+$$\frac{1}{|\Folner[N]|}\sum_{\GroupElement\in\Folner[N]}\delta_{\GroupAction{\GroupElement}{x}}\underset{\text{weakly*}}{\longrightarrow} \mu \text{ as }N\rightarrow\infty, $$
+then we say *$x$ is generic for $\mu$ with respect to $\Folner$* and we denote this with $x\in\text{gen}(\mu,\Phi)$.^[consider tempered separately as the FCP construction only depends on sequential compactness]
 
 ## Recurrence Results & Ergodic Theorems
 
