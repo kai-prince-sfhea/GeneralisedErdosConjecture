@@ -27,16 +27,13 @@ format:
     keep-tex: true
     toc: true
 
-term-aliases:
-  - alias: Erdős
+terms:
+  - term: Erdős
     macro: Erdos
 
-author:
-    - name: Kai Prince
-      affiliation: The University of Manchester
-      corresponding: true
-      orcid: 0009-0000-5246-4227
-      email: kai.prince@manchester.ac.uk
+schema:
+  backlinks: false
+  outlinks: false
 
 title: "A Short Proof of a Generalised Conjecture of Erdős for Amenable Groups"
 
@@ -78,56 +75,58 @@ Throughout this paper, unless otherwise specified, we will let $(\AmenableGroup,
 
 :::: {#def-FolnerSequenceDef}
 
-[Embed #def-tempered from folner.qmd]
+{{< term ref="def-rightFolner" block=true >}}
 
+{{< term ref="def-leftFolner" block=true >}}
+
+{{< term ref="def-Folner" block=true >}}
 ::::
 
 For simplicity of this paper, we will use the alternative and equivalent definition that a group, $\AmenableGroup$, is *amenable* (and second countable) if and only if it has a Følner sequence.
 
 :::: {#def-TemperedSequenceDef}
+## @Lindenstrauss2001PETAmenable [Definition 1.1, Proposition 1.4]
 
-[Embed #prp-temperedFolner from folner.qmd]
+{{< term ref="def-tempered" block=true >}}
 
+{{< term ref="prp-temperedFolner" block=true >}}
 ::::
 
 :::: {#def-DensityDef}
 
-[Embed #def-density from density.qmd]
-
+{{< term ref="def-density" block=true >}}
 ::::
 
 ## Topological Dynamics of Group Actions
 
 :::: {#def-ActionDef}
+## {{< term-title ref="def-action" removeURLs=true >}}
 
-[Embed #def-action from actions.qmd]
-
+{{< term ref="def-action" block=true >}}
 ::::
 
 :::: {#def-TopologicalDynamicSystemsDef}
 
-[Embed #def-topologicalDynamicalSystem from actions.qmd]
-
+{{< term ref="def-topologicalDynamicalSystem" block=true >}}
 ::::
 
 :::: {#def-GenericDef}
 
-[Embed #def-generic from actions.qmd]
-
+{{< term ref="def-generic" block=true >}}
 ::::
 
 ## Recurrence Results & Ergodic Theorems
 
 ::: {#thm-BergelsonRecurrence}
+## {{< term-title ref="thm-recurrence" removeURLs=true >}}
 
-[Embed #thm-recurrence from recurrence-and-Ergodic-theorems.qmd]
-
+{{< term ref="thm-recurrence" block=true >}}
 :::
 
 ::: {#thm-GeneralisedPET}
+## {{< term-title ref="thm-GeneralisedPET" removeURLs=true >}}
 
-[Embed #thm-GeneralisedPET from recurrence-and-Ergodic-theorems.qmd]
-
+{{< term ref="thm-GeneralisedPET" block=true >}}
 :::
 
 ## Erdős Cubes & Cubic Measures
@@ -172,17 +171,17 @@ If $a\in X$ is generic for $\Measure$ with respect to some Følner sequence $\Fo
 ## Furstenberg's Correspondence Princple
 
 ::: {#thm-Furstenberg}
+## {{< term-title ref="thm-FCP" removeURLs=true >}}
 
-[Embed #thm-FCP from furstenberg-correspondence.qmd]
-
+{{< term ref="thm-FCP" block=true >}}
 :::
 
 ## Kronecker Factor
 
 ::: {#prp-KroneckerGeneric}
+## {{< term-title ref="prp-KroneckerGeneric" removeURLs=true >}}
 
-[Embed #prp-KroneckerGeneric from factor-maps.qmd]
-
+{{< term ref="prp-KroneckerGeneric" block=true >}}
 :::
 
 ## Choosing a point $x_1$
