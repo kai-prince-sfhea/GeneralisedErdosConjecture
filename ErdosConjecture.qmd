@@ -48,19 +48,19 @@ draft: true
 # Introduction
 
 ::: {#thm-GenErdosConjComb}
-## [cf. @host2019short, Theorem 1]
+## [[cf. @host2019short, Theorem 1]]{.no-paren}
 
 Let $(\AmenableGroup,\GroupOperation{}{})$ be an amenable group. If $A\subseteq\AmenableGroup$ has positive density, then there exists infinite subsets $B$ and $C$ of $\AmenableGroup$ such that $\GroupOperation{B}{C}\subset A$.
 :::
 
 ::: {#thm-GenErdosConjRel}
-## [cf. @host2019short, Proposition 2]
+## [[cf. @host2019short, Proposition 2]]{.no-paren}
 
 There exists a set of positive density not containing any sumset of positive density and an infinite set.
 :::
 
 ::: {#thm-GenNErdosConjComb}
-## [cf. @kra2022infinite, Theorem 1.1]
+## [[cf. @kra2022infinite, Theorem 1.1]]{.no-paren}
 
 Let $(\AmenableGroup,\GroupOperation{}{})$ be an amenable group. If $A\subseteq\AmenableGroup$ has positive density then, for every $k\in\N$, there are infinite subsets $B_1,...,B_k\subset\AmenableGroup$ such that $B_1\cdot\cdots\cdot B_k\subset A$.
 :::
@@ -85,7 +85,7 @@ Throughout this paper, unless otherwise specified, we will let $(\AmenableGroup,
 For simplicity of this paper, we will use the alternative and equivalent definition that a group, $\AmenableGroup$, is *amenable* (and second countable) if and only if it has a Følner sequence.
 
 :::: {#def-TemperedSequenceDef}
-## @Lindenstrauss2001PETAmenable [Definition 1.1, Proposition 1.4]
+## [[@Lindenstrauss2001PETAmenable, Definition 1.1 and Proposition 1.4]]{.no-paren}
 
 {{< term ref="def-tempered" block=true >}}
 
@@ -136,7 +136,7 @@ For simplicity of this paper, we will use the alternative and equivalent definit
 ## Key Dynamical Results
 
 ::: {#thm-GenErdosConjDyn}
-## cf. @host2019short [Theorem 3]
+## [[cf. @host2019short, Theorem 3]]{.no-paren}
 
 Let $(X,\AmenableGroup)$ be a topological dynamical system where $\AmenableGroup$ is an amenable group, $x_0\in X$, $E$ be a clopen subset of $X$ and
 $$A=\{\AmenableGroupElement\in\AmenableGroup:\GroupAction{\AmenableGroupElement}{x_0}\in E\}.$$
@@ -149,7 +149,7 @@ Then there exist infinite subsets $B,C\subseteq \AmenableGroup$ such that $\Grou
 :::
 
 ::: {#thm-GenErdosConjCube}
-## cf. @kra2022infinite [Theorem 3.5]
+## [[cf. @kra2022infinite, Theorem 3.5]]{.no-paren}
 
 Let $(X,\Measure,\AmenableGroup)$ be an ergodic system under the action of $\AmenableGroup$ and let $E\subset X$ be an open set with $\Measure(E)>0$.
 
@@ -158,7 +158,7 @@ If $a\in X$ is generic for $\Measure$ with respect to some Følner sequence $\Fo
 :::
 
 ::: {#thm-GenNErdosConjCube}
-## cf. @host2019short [Theorem 4.4]
+## [[cf. @host2019short, Theorem 4.4]]{.no-paren}
 
 Let $(X,\Measure,\AmenableGroup)$ be an ergodic system under the action of $\AmenableGroup$ and let $E\subset X$ be an open set with $\Measure(E)>0$.
 
